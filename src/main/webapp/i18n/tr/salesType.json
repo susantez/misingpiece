@@ -1,0 +1,9 @@
+{
+    "misingpieceApp": {
+        "SalesType" : {
+            "null": "",
+            "ONLINE": "ONLINE",
+            "EVENT": "EVENT"
+        }
+    }
+}

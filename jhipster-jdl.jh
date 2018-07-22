@@ -1,0 +1,67 @@
+entity Product {
+    name String required maxlength(250),
+    description String maxlength(1000),
+    targetPrice Float required
+    creationDate LocalDate,
+    updateDate LocalDate
+    status Status
+}
+
+entity Category {
+	name String required maxlength(250),
+	description String maxlength(1000)
+}
+
+entity Event {
+	name String required maxlength(250),
+    description String maxlength(1000),
+    location String,
+    startDate LocalDate required,
+    endDate LocalDate required
+}
+
+entity EventInventory {
+	itemCount Float required,
+    creationDate LocalDate
+}
+
+entity Sales {
+	type SalesType,
+    unitPrice Float required,
+    itemCount Float required,
+    totalPrice Float required
+    creationDate LocalDate,
+    updateDate LocalDate,
+    status Status
+}
+
+enum Status {
+	ACTIVE, HISTORY
+}
+
+enum SalesType {
+	ONLINE, EVENT
+}
+
+relationship ManyToOne {
+	Product{category} to Category
+}
+
+// defining multiple oneToOne relationships
+relationship ManyToOne {
+	EventInventory{product} to Product,
+	EventInventory{event} to Event
+}
+
+relationship ManyToOne {
+	Sales{product} to Product
+}
+
+relationship ManyToMany {
+	Sales{event} to Event
+}
+
+// Set pagination options
+paginate Product with infinite-scroll
+paginate Sales with pagination
+

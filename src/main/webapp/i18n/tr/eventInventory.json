@@ -1,0 +1,25 @@
+
+{
+    "misingpieceApp": {
+        "eventInventory" : {
+            "home": {
+                "title": "Event Inventories",
+                "createLabel": "Create a new Event Inventory",
+                "createOrEditLabel": "Create or edit a Event Inventory"
+            },
+            "created": "A new Event Inventory is created with identifier {{ param }}",
+            "updated": "A Event Inventory is updated with identifier {{ param }}",
+            "deleted": "A Event Inventory is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Event Inventory {{ id }}?"
+            },
+            "detail": {
+                "title": "Event Inventory"
+            },
+            "itemCount": "Item Count",
+            "creationDate": "Creation Date",
+            "product": "Product",
+            "event": "Event"
+        }
+    }
+}

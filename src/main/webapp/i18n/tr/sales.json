@@ -1,0 +1,30 @@
+
+{
+    "misingpieceApp": {
+        "sales" : {
+            "home": {
+                "title": "Sales",
+                "createLabel": "Create a new Sales",
+                "createOrEditLabel": "Create or edit a Sales"
+            },
+            "created": "A new Sales is created with identifier {{ param }}",
+            "updated": "A Sales is updated with identifier {{ param }}",
+            "deleted": "A Sales is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Sales {{ id }}?"
+            },
+            "detail": {
+                "title": "Sales"
+            },
+            "type": "Type",
+            "unitPrice": "Unit Price",
+            "itemCount": "Item Count",
+            "totalPrice": "Total Price",
+            "creationDate": "Creation Date",
+            "updateDate": "Update Date",
+            "status": "Status",
+            "product": "Product",
+            "event": "Event"
+        }
+    }
+}
